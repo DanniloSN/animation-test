@@ -102,7 +102,7 @@ body {
 @keyframes mercury-translation {
     0% {
         transform: translate(0, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
         z-index: 1;
     }
     25% {
@@ -112,7 +112,7 @@ body {
     26% { z-index: -1 }
     50% {
         transform: translate(0rem, 0);
-        transform: scale(50%, 50%);
+        transform: scale(25%, 25%);
     }
     75% {
         transform: translate(-13rem, 0);
@@ -121,139 +121,139 @@ body {
     76% { z-index: 1 }
     100% {
         transform: translate(0rem, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
     }
 }
 
 @keyframes venus-translation {
     0% {
         transform: translate(0, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
         z-index: 2;
     }
     25% { transform: translate(16rem, 0) }
     50% {
         transform: translate(0rem, 0);
-        transform: scale(50%, 50%);
+        transform: scale(25%, 25%);
         z-index: -2;
     }
     75% { transform: translate(-16rem, 0) }
     100% {
         transform: translate(0rem, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
     }
 }
 
 @keyframes earth-translation {
     0% {
         transform: translate(0, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
         z-index: 3;
     }
     25% { transform: translate(19rem, 0) }
     50% {
         transform: translate(0rem, 0);
-        transform: scale(50%, 50%);
+        transform: scale(25%, 25%);
         z-index: -3;
     }
     75% { transform: translate(-19rem, 0) }
     100% {
         transform: translate(0rem, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
     }
 }
 
 @keyframes mars-translation {
     0% {
         transform: translate(0, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
         z-index: 4;
     }
     25% { transform: translate(22rem, 0) }
     50% {
         transform: translate(0rem, 0);
-        transform: scale(50%, 50%);
+        transform: scale(25%, 25%);
         z-index: -4;
     }
     75% { transform: translate(-22rem, 0) }
     100% {
         transform: translate(0rem, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
     }
 }
 
 @keyframes jupiter-translation {
     0% {
         transform: translate(0, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
         z-index: 5;
     }
     25% { transform: translate(26.5rem, 0) }
     50% {
         transform: translate(0rem, 0);
-        transform: scale(50%, 50%);
+        transform: scale(25%, 25%);
         z-index: -5;
     }
     75% { transform: translate(-26.5rem, 0) }
     100% {
         transform: translate(0rem, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
     }
 }
 
 @keyframes saturn-translation {
     0% {
         transform: translate(0, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
         z-index: 6;
     }
     25% { transform: translate(33rem, 0) }
     50% {
         transform: translate(0rem, 0);
-        transform: scale(50%, 50%);
+        transform: scale(25%, 25%);
         z-index: -6;
     }
     75% { transform: translate(-33rem, 0) }
     100% {
         transform: translate(0rem, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
     }
 }
 
 @keyframes uranus-translation {
     0% {
         transform: translate(0, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
         z-index: 7;
     }
     25% { transform: translate(37.5rem, 0) }
     50% {
         transform: translate(0rem, 0);
-        transform: scale(50%, 50%);
+        transform: scale(25%, 25%);
         z-index: -7;
     }
     75% { transform: translate(-37.5rem, 0) }
     100% {
         transform: translate(0rem, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
     }
 }
 
 @keyframes neptune-translation {
     0% {
         transform: translate(0, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
         z-index: 8;
     }
     25% { transform: translate(40.5rem, 0) }
     50% {
         transform: translate(0rem, 0);
-        transform: scale(50%, 50%);
+        transform: scale(25%, 25%);
         z-index: -8;
     }
     75% { transform: translate(-40.5rem, 0) }
     100% {
         transform: translate(0rem, 0);
-        transform: scale(150%, 150%);
+        transform: scale(175%, 175%);
     }
 }
