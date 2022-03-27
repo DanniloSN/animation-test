@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.celestial-body {
+    position: absolute;
+    border-radius: 100%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.sun {
+    height: 20rem;
+    width: 20rem;
+    background-color: yellow;
+    z-index: 0;
+}
+
+.mercury {
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: brown;
+    animation-name: mercury-translation;
+    animation-duration: 10s;
+}
+
+.venus {
+    height: 2rem;
+    width: 2rem;
+    background-color: pink;
+    animation-name: venus-translation;
+    animation-duration: 10s;
+}
+
+.earth {
+    height: 2rem;
+    width: 2rem;
+    background-color: blue;
+    animation-name: earth-translation;
+    animation-duration: 10s;
+}
+
+.mars {
+    height: 1.4rem;
+    width: 1.4rem;
+    background-color: red;
+    animation-name: mars-translation;
+    animation-duration: 10s;
+}
+
+
+@keyframes mercury-translation {
+    0% {
+        transform: translate(0, 0);
+        transform: scale(150%, 150%);
+        z-index: 3;
+    }
+    25% {
+        transform: translate(14rem, 0);
+    }
+    50% {
+        transform: translate(0rem, 0);
+        transform: scale(50%, 50%);
+        z-index: -3;
+    }
+    75% {
+        transform: translate(-14rem, 0);
+    }
+    100% {
+        transform: translate(0rem, 0);
+        transform: scale(150%, 150%);
+    }
+}
+
+@keyframes venus-translation {
+    0% {
+        transform: translate(0, 0);
+        transform: scale(150%, 150%);
+        z-index: 3;
+    }
+    25% {
+        transform: translate(18rem, 0);
+    }
+    50% {
+        transform: translate(0rem, 0);
+        transform: scale(50%, 50%);
+        z-index: -3;
+    }
+    75% {
+        transform: translate(-18rem, 0);
+    }
+    100% {
+        transform: translate(0rem, 0);
+        transform: scale(150%, 150%);
+    }
+}
+
+@keyframes earth-translation {
+    0% {
+        transform: translate(0, 0);
+        transform: scale(150%, 150%);
+        z-index: 3;
+    }
+    25% {
+        transform: translate(22rem, 0);
+    }
+    50% {
+        transform: translate(0rem, 0);
+        transform: scale(50%, 50%);
+        z-index: -3;
+    }
+    75% {
+        transform: translate(-22rem, 0);
+    }
+    100% {
+        transform: translate(0rem, 0);
+        transform: scale(150%, 150%);
+    }
+}
+
+@keyframes mars-translation {
+    0% {
+        transform: translate(0, 0);
+        transform: scale(150%, 150%);
+        z-index: 4;
+    }
+    25% {
+        transform: translate(26rem, 0);
+    }
+    50% {
+        transform: translate(0rem, 0);
+        transform: scale(50%, 50%);
+        z-index: -4;
+    }
+    75% {
+        transform: translate(-26rem, 0);
+    }
+    100% {
+        transform: translate(0rem, 0);
+        transform: scale(150%, 150%);
+    }
+}
