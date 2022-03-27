@@ -17,19 +17,27 @@ body {
     border-radius: 100%;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    text-align: center;
+}
+
+.celestial-body span {
+    position: absolute;
+    transform: translate(-50%, -150%);
+    color: white;
+    text-transform: capitalize;
 }
 
 .sun {
     height: 20rem;
     width: 20rem;
-    background-color: yellow;
+    background-image: radial-gradient(#fed7a4, #f7ab57, #f58021, #f05d24, #f26825);
     z-index: 0;
 }
 
 .mercury {
     height: 1.2rem;
     width: 1.2rem;
-    background-color: brown;
+    background-image: linear-gradient(#e3e7e9, #c1c0c0, #949494, #848686, #7e7f7f);
     animation-name: mercury-translation;
     animation-duration: 10s;
 }
@@ -37,25 +45,57 @@ body {
 .venus {
     height: 2rem;
     width: 2rem;
-    background-color: pink;
+    background-image: linear-gradient(#f6cdaa, #fab176, #db6b30, #6f2315, #4f1f11);
     animation-name: venus-translation;
-    animation-duration: 10s;
+    animation-duration: 13s;
 }
 
 .earth {
     height: 2rem;
     width: 2rem;
-    background-color: blue;
+    background-image: linear-gradient(#a1acb6, #6c7b48, #b18c73, #151340, #212d60);
     animation-name: earth-translation;
-    animation-duration: 10s;
+    animation-duration: 16s;
 }
 
 .mars {
     height: 1.4rem;
     width: 1.4rem;
-    background-color: red;
+    background-image: linear-gradient(#dfa964, #a07845, #ae946e, #52575d, #21384c);
     animation-name: mars-translation;
-    animation-duration: 10s;
+    animation-duration: 19s;
+}
+
+.jupiter {
+    height: 5rem;
+    width: 5rem;
+    background-image: linear-gradient(#e1d399, #b3ae84, #c1b685, #e5d59d, #9d9366);
+    animation-name: jupiter-translation;
+    animation-duration: 22s;
+}
+
+.saturn {
+    height: 5rem;
+    width: 5rem;
+    background-image: linear-gradient(#f9e4c4, #dcc592, #b99f7a, #8f6f40, #412f21);
+    animation-name: saturn-translation;
+    animation-duration: 25s;
+}
+
+.uranus {
+    height: 2rem;
+    width: 2rem;
+    background-image: linear-gradient(#ceecf9, #c3e6f0, #bcdee7, #aacbd2, #739097);
+    animation-name: uranus-translation;
+    animation-duration: 28s;
+}
+
+.neptune {
+    height: 2rem;
+    width: 2rem;
+    background-image: linear-gradient(#c5dff3, #867ab9, #7563ac, #6751a2, #4b3d81);
+    animation-name: neptune-translation;
+    animation-duration: 31s;
 }
 
 
@@ -63,19 +103,22 @@ body {
     0% {
         transform: translate(0, 0);
         transform: scale(150%, 150%);
-        z-index: 3;
+        z-index: 1;
     }
     25% {
-        transform: translate(14rem, 0);
+        transform: translate(13rem, 0);
+        z-index: 1;
     }
+    26% { z-index: -1 }
     50% {
         transform: translate(0rem, 0);
         transform: scale(50%, 50%);
-        z-index: -3;
     }
     75% {
-        transform: translate(-14rem, 0);
+        transform: translate(-13rem, 0);
+        z-index: -1
     }
+    76% { z-index: 1 }
     100% {
         transform: translate(0rem, 0);
         transform: scale(150%, 150%);
@@ -86,19 +129,15 @@ body {
     0% {
         transform: translate(0, 0);
         transform: scale(150%, 150%);
-        z-index: 3;
+        z-index: 2;
     }
-    25% {
-        transform: translate(18rem, 0);
-    }
+    25% { transform: translate(16rem, 0) }
     50% {
         transform: translate(0rem, 0);
         transform: scale(50%, 50%);
-        z-index: -3;
+        z-index: -2;
     }
-    75% {
-        transform: translate(-18rem, 0);
-    }
+    75% { transform: translate(-16rem, 0) }
     100% {
         transform: translate(0rem, 0);
         transform: scale(150%, 150%);
@@ -111,17 +150,13 @@ body {
         transform: scale(150%, 150%);
         z-index: 3;
     }
-    25% {
-        transform: translate(22rem, 0);
-    }
+    25% { transform: translate(19rem, 0) }
     50% {
         transform: translate(0rem, 0);
         transform: scale(50%, 50%);
         z-index: -3;
     }
-    75% {
-        transform: translate(-22rem, 0);
-    }
+    75% { transform: translate(-19rem, 0) }
     100% {
         transform: translate(0rem, 0);
         transform: scale(150%, 150%);
@@ -134,17 +169,89 @@ body {
         transform: scale(150%, 150%);
         z-index: 4;
     }
-    25% {
-        transform: translate(26rem, 0);
-    }
+    25% { transform: translate(22rem, 0) }
     50% {
         transform: translate(0rem, 0);
         transform: scale(50%, 50%);
         z-index: -4;
     }
-    75% {
-        transform: translate(-26rem, 0);
+    75% { transform: translate(-22rem, 0) }
+    100% {
+        transform: translate(0rem, 0);
+        transform: scale(150%, 150%);
     }
+}
+
+@keyframes jupiter-translation {
+    0% {
+        transform: translate(0, 0);
+        transform: scale(150%, 150%);
+        z-index: 5;
+    }
+    25% { transform: translate(26.5rem, 0) }
+    50% {
+        transform: translate(0rem, 0);
+        transform: scale(50%, 50%);
+        z-index: -5;
+    }
+    75% { transform: translate(-26.5rem, 0) }
+    100% {
+        transform: translate(0rem, 0);
+        transform: scale(150%, 150%);
+    }
+}
+
+@keyframes saturn-translation {
+    0% {
+        transform: translate(0, 0);
+        transform: scale(150%, 150%);
+        z-index: 6;
+    }
+    25% { transform: translate(33rem, 0) }
+    50% {
+        transform: translate(0rem, 0);
+        transform: scale(50%, 50%);
+        z-index: -6;
+    }
+    75% { transform: translate(-33rem, 0) }
+    100% {
+        transform: translate(0rem, 0);
+        transform: scale(150%, 150%);
+    }
+}
+
+@keyframes uranus-translation {
+    0% {
+        transform: translate(0, 0);
+        transform: scale(150%, 150%);
+        z-index: 7;
+    }
+    25% { transform: translate(37.5rem, 0) }
+    50% {
+        transform: translate(0rem, 0);
+        transform: scale(50%, 50%);
+        z-index: -7;
+    }
+    75% { transform: translate(-37.5rem, 0) }
+    100% {
+        transform: translate(0rem, 0);
+        transform: scale(150%, 150%);
+    }
+}
+
+@keyframes neptune-translation {
+    0% {
+        transform: translate(0, 0);
+        transform: scale(150%, 150%);
+        z-index: 8;
+    }
+    25% { transform: translate(40.5rem, 0) }
+    50% {
+        transform: translate(0rem, 0);
+        transform: scale(50%, 50%);
+        z-index: -8;
+    }
+    75% { transform: translate(-40.5rem, 0) }
     100% {
         transform: translate(0rem, 0);
         transform: scale(150%, 150%);
