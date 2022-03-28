@@ -32,6 +32,9 @@ body {
     width: 20rem;
     background-image: radial-gradient(#fed7a4, #f7ab57, #f58021, #f05d24, #f26825);
     z-index: 0;
+    animation-name: sun-pulsation;
+    animation-duration: 3s;
+    animation-direction: alternate;
 }
 
 .mercury {
@@ -98,6 +101,11 @@ body {
     animation-duration: 31s;
 }
 
+
+@keyframes sun-pulsation {
+    from { box-shadow: 0 0 10px red }
+    to { box-shadow: 0 0 20px red }
+}
 
 @keyframes mercury-translation {
     0% {
